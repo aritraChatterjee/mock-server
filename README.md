@@ -1,2 +1,3 @@
 # mock-server
-A lightweight http server built using nodejs and express
+
+A lightweight http server built using typescript, nodejs and express

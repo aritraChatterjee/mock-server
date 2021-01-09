@@ -1,9 +1,8 @@
-require('dotenv').config();
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const CONTEXT_ROOT = process.env.CONTEXT_ROOT;
 const PORT = process.env.PORT;
 
-module.exports = {
-	CONTEXT_ROOT,
-	PORT
-};
+export { CONTEXT_ROOT, PORT };

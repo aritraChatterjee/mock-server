@@ -1,4 +1,4 @@
-import express from 'express';
+import express, { Express } from 'express';
 import { json } from 'body-parser';
 import cors from 'cors';
 import { router as endpointsRouter } from './controllers/endpoints';
@@ -6,9 +6,9 @@ import { requestLogger, unknownEndpoint, errorHandler } from './utils/middleware
 import { info } from './utils/logger';
 import { CONTEXT_ROOT } from './utils/config';
 
-info(`starting mock-server with context-root : /${CONTEXT_ROOT}`);
+info(`starting server with context-root : /${CONTEXT_ROOT}`);
 
-const app = express();
+const app: Express = express();
 
 app.use(cors());
 app.use(json());
